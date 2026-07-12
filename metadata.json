@@ -1,0 +1,6 @@
+{
+  "name": "LLM Search Engine",
+  "description": "An intelligent AI-powered search assistant that utilizes multi-source agent reasoning across Google Search, Wikipedia, and arXiv.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
