@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# LLM Search Engine
 
-# Run and deploy your AI Studio app
+An intelligent AI-powered search assistant that utilizes multi-source agent reasoning across Google Search, Wikipedia, and arXiv.
 
-This contains everything you need to run your app locally.
+## Overview
 
-View your app in AI Studio: https://ai.studio/apps/cdfab73b-760f-40d0-ade9-bf3c6b8cc681
+This project combines the power of Large Language Models (LLMs) with multi-source information retrieval to provide intelligent, context-aware search capabilities. The system uses agent-based reasoning to synthesize information from multiple sources and deliver comprehensive, accurate results.
 
-## Run Locally
+## Features
 
-**Prerequisites:**  Node.js
+- **Multi-Source Integration**: Search across Google Search, Wikipedia, and arXiv simultaneously
+- **Agent-Based Reasoning**: Intelligent agents analyze and synthesize information from multiple sources
+- **LLM-Powered**: Leverages advanced language models for natural language understanding and response generation
+- **Context-Aware**: Understands complex queries and provides relevant, contextual results
 
+## Architecture
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Search Agents**: Specialized agents for each information source
+- **LLM Core**: Advanced language model for query understanding and response synthesis
+- **Information Aggregation**: Combines and deduplicates results from multiple sources
+- **Response Generation**: Generates comprehensive answers based on aggregated information
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/madhuchintha99/llm-search-engine.git
+cd llm-search-engine
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the search engine
+python main.py
+
+OPENAI_API_KEY=your_key_here
+GOOGLE_API_KEY=your_key_here
+
+Technologies
+LLMs: OpenAI GPT models
+Search APIs: Google Search, Wikipedia API, arXiv API
+Agent Framework: LangChain or similar
+Language: Python
